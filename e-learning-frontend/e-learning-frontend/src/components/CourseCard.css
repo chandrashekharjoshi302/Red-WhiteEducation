@@ -1,0 +1,71 @@
+/* Container for the course card */
+.course-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    max-width: 300px;
+    margin: 1rem;
+}
+
+/* Hover effect for card */
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Course image styles */
+.course-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Content container */
+.course-content {
+    padding: 1rem;
+}
+
+/* Title styles */
+.course-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 0 0 0.5rem;
+    color: #333;
+}
+
+/* Description styles */
+.course-description {
+    font-size: 0.95rem;
+    color: #555;
+    margin: 0 0 1rem;
+}
+
+/* Enroll button styles */
+.enroll-btn {
+    display: block;
+    width: 100%;
+    background-color: #0044cc;
+    color: #fff;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for button */
+.enroll-btn:hover {
+    background-color: #003399;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .course-card {
+        max-width: 100%;
+    }
+}

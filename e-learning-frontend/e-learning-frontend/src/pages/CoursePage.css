@@ -1,0 +1,201 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Course Page Container */
+.course-page {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Error Message */
+.error-message {
+    background-color: #ffe5e5;
+    color: #d8000c;
+    padding: 10px;
+    border: 1px solid #d8000c;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Course Creation Section */
+.course-creation {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.course-creation h2 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: #0044cc;
+}
+
+.course-creation input,
+.course-creation textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.course-creation button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.course-creation button:hover {
+    background-color: #218838;
+}
+
+.course-creation button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Course List Section */
+.course-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.course-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.course-card h3 {
+    color: #0044cc;
+    margin: 0 0 10px;
+}
+
+.course-card p {
+    margin: 10px 0;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+/* Embedded Video Styling */
+.lesson-videos iframe {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    border: none;
+    margin-top: 10px;
+}
+
+/* Course Actions */
+.course-actions button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.course-actions button:hover {
+    background-color: #0056b3;
+}
+
+.course-actions button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+
+.lesson-container {
+    margin-bottom: 10px;
+  }
+  
+  .view-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .view-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .video-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+  }
+  
+  .close-modal {
+    margin-top: 20px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .close-modal:hover {
+    background-color: #a71d2a;
+  }
+  
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .course-list {
+        grid-template-columns: 1fr;
+    }
+
+    .course-card iframe {
+        height: 180px;
+    }
+}
